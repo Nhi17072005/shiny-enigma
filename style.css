@@ -1,0 +1,18 @@
+/* Truy vấn #1: Chế độ xem máy tính bảng (từ 772px trở lên) */
+@media all and (min-width: 772px) {
+  div {
+    width: 45vw; /* Chiều rộng bằng 45% chiều rộng chế độ xem (viewport width) */
+    display: inline-block; /* Hoặc float / flex tùy thuộc vào cấu trúc trang để các div nằm cạnh nhau */
+  }
+
+  img {
+    max-height: 30vh; /* Hình ảnh không quá 30% chiều cao chế độ xem (viewport height) */
+  }
+}
+
+/* Truy vấn #2: Chế độ xem màn hình lớn (từ 998px trở lên) */
+@media all and (min-width: 998px) {
+  div {
+    width: 30vw; /* Chiều rộng bằng 30% chiều rộng chế độ xem */
+  }
+}
