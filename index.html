@@ -2,25 +2,109 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <!-- Khai báo viewport để media query hoạt động -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiem Tra Responsive</title>
-    <!-- Liên kết đến file CSS của bạn -->
+    <title>Báo Cáo Đánh Giá Trang Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div>
-        <h2>Thẻ Div 1</h2>
-        <img src="anh1.jpg" alt="Hình ảnh mẫu">
-        <p>Nội dung thẻ div thứ nhất...</p>
-    </div>
+    <header>
+        <h1>Báo Cáo & Bài Nộp Đánh Giá Website</h1>
+        <p>Tài liệu chứng minh khả năng và các tính năng của trang web</p>
+    </header>
 
-    <div>
-        <h2>Thẻ Div 2</h2>
-        <img src="anh2.jpeg" alt="Hình ảnh mẫu">
-        <p>Nội dung thẻ div thứ hai...</p>
-    </div>
+    <main class="container">
+
+        <!-- Phần 1: Liên kết & Mô tả dự án -->
+        <section class="card">
+            <h2>1. Thông Tin Dự Án & Liên Kết</h2>
+            <p><strong>Liên kết đến trang web (Live Demo):</strong> <a href="https://du-an-cua-ban.netlify.app" target="_blank" rel="noopener">https://du-an-cua-ban.netlify.app</a></p>
+            <p><strong>Liên kết Video Demo (YouTube/Vimeo/Drive):</strong> <a href="https://youtube.com/watch?v=xxx" target="_blank" rel="noopener">Xem Video Thuyết Minh</a></p>
+            
+            <h3>Mô tả tổng quan về dự án:</h3>
+            <p>
+                Trang web này được xây dựng nhằm cung cấp giải pháp [điền chủ đề trang web của bạn]. 
+                Giao diện được thiết kế hiện đại, tối ưu trải nghiệm người dùng, tuân thủ các tiêu chuẩn web và hỗ trợ hiển thị mượt mà trên mọi thiết bị.
+            </p>
+        </section>
+
+        <!-- Phần 2: Bằng chứng tiêu chuẩn kỹ thuật -->
+        <section class="card">
+            <h2>2. Bằng Chứng Tiêu Chuẩn Kỹ Thuật</h2>
+
+            <article class="proof-item">
+                <h3>a. Kiểm tra W3C Validator</h3>
+                <p>Mã nguồn HTML và CSS đã được xác thực qua công cụ W3C, không chứa lỗi cú pháp.</p>
+                <div class="img-placeholder">
+                    <!-- Thay bằng thẻ <img> chứa ảnh chụp màn hình của bạn -->
+                    <p>[ Ảnh chụp màn hình kết quả W3C Validated ]</p>
+                </div>
+            </article>
+
+            <article class="proof-item">
+                <h3>b. Thiết kế Responsive (Tương thích thiết bị)</h3>
+                <p>Website hiển thị tối ưu trên Desktop, Tablet và Mobile nhờ công nghệ CSS Flexbox/Grid và Media Queries.</p>
+                <div class="img-placeholder">
+                    <!-- Thay bằng thẻ <img> chứa ảnh chụp màn hình của bạn -->
+                    <p>[ Ảnh chụp màn hình giao diện Mobile / Tablet / Desktop ]</p>
+                </div>
+            </article>
+
+            <article class="proof-item">
+                <h3>c. Phong cách Thiết kế & CSS</h3>
+                <p>Giao diện sử dụng bảng màu hài hòa, typography rõ ràng và các hiệu ứng chuyển động mượt mà bằng CSS.</p>
+            </article>
+        </section>
+
+        <!-- Phần 3: 4 Tính năng bổ sung -->
+        <section class="card">
+            <h2>3. Bốn Tính Năng Bổ Sung (Extra Features)</h2>
+
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <h3>Tính năng 1: Dark Mode Toggle</h3>
+                    <p>Cho phép người dùng chuyển đổi giữa chế độ sáng và tối.</p>
+                    <pre><code>/* Mã CSS hoặc JS liên quan */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}</code></pre>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Tính năng 2: Smooth Scrolling & Sticky Nav</h3>
+                    <p>Thanh điều hướng cố định đỉnh trang và cuộn trang mượt mà khi bấm menu.</p>
+                    <pre><code>html {
+    scroll-behavior: smooth;
+}</code></pre>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Tính năng 3: Custom CSS Animations</h3>
+                    <p>Hiệu ứng xuất hiện mượt mà cho các thành phần nội dung khi di chuột.</p>
+                    <pre><code>.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}</code></pre>
+                </div>
+
+                <div class="feature-box">
+                    <h3>Tính năng 4: Interactive Contact Form / Filter</h3>
+                    <p>Biểu mẫu hoặc bộ lọc dữ liệu tương tác linh hoạt cho người dùng.</p>
+                    <pre><code>/* CSS Styling cho Form/Filter */
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bài nộp dự án Web. Tất cả các quyền được bảo lưu.</p>
+    </footer>
 
 </body>
 </html>
